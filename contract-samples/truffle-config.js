@@ -18,10 +18,8 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const MNEMONIC = "mandate dolphin target power cattle cabbage once trust hammer thrive broccoli fury arena flat reject";
 
 module.exports = {
   /**
@@ -46,6 +44,14 @@ module.exports = {
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: 5777,       // Any network (default: none)
     },
+    ropsten: {
+      provider: function() {
+        return new HDWalletProvider(MNEMONIC, "https://ropsten.infura.io/v3/1191c415e2f8426d95e47d56bc742fc6")
+      },
+      network_id: 3,
+      gas: 4000000,      //make sure this gas allocation isn't over 4M, which is the max
+      gasPrice: 5000
+    }
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
