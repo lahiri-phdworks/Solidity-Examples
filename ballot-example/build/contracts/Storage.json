@@ -1,0 +1,670 @@
+{
+  "contractName": "Storage",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "num",
+          "type": "uint128"
+        }
+      ],
+      "name": "store",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "retrieve",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint128\",\"name\":\"num\",\"type\":\"uint128\"}],\"name\":\"store\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Store & retrieve value in a variable\",\"kind\":\"dev\",\"methods\":{\"retrieve()\":{\"details\":\"Return value \",\"returns\":{\"_0\":\"value of 'number'\"}},\"store(uint128)\":{\"details\":\"Store value in variable\",\"params\":{\"num\":\"value to store\"}}},\"title\":\"Storage\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Storage.sol\":\"Storage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Storage.sol\":{\"keccak256\":\"0x9ce3412b71a28106eba66e142eccb5f46b587f0f5ee3aeb71efca5379d6b4595\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://3d609f363c95a27d65834de43922ac7572a92ed757a7f98e5010be24f0970105\",\"dweb:/ipfs/QmecXJKvNmyRtvyg7W3XQGkyvTc6Qy9MvKpNXTcMM5kj5k\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610141806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80632e64cec11461003b578063dc6ff17a14610059575b600080fd5b610043610099565b6040518082815260200191505060405180910390f35b6100976004803603602081101561006f57600080fd5b8101908080356fffffffffffffffffffffffffffffffff1690602001909291905050506100d0565b005b60008060009054906101000a90046fffffffffffffffffffffffffffffffff166fffffffffffffffffffffffffffffffff16905090565b806000806101000a8154816fffffffffffffffffffffffffffffffff02191690836fffffffffffffffffffffffffffffffff1602179055505056fea2646970667358221220181130aefef35f5477fda6b95615f456a2cd7285bbe41e759265b90a82322c2f64736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80632e64cec11461003b578063dc6ff17a14610059575b600080fd5b610043610099565b6040518082815260200191505060405180910390f35b6100976004803603602081101561006f57600080fd5b8101908080356fffffffffffffffffffffffffffffffff1690602001909291905050506100d0565b005b60008060009054906101000a90046fffffffffffffffffffffffffffffffff166fffffffffffffffffffffffffffffffff16905090565b806000806101000a8154816fffffffffffffffffffffffffffffffff02191690836fffffffffffffffffffffffffffffffff1602179055505056fea2646970667358221220181130aefef35f5477fda6b95615f456a2cd7285bbe41e759265b90a82322c2f64736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "141:356:4:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "141:356:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;416:79;;;:::i;:::-;;;;;;;;;;;;;;;;;;;271:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;416:79;457:7;482:6;;;;;;;;;;;475:13;;;;416:79;:::o;271:64::-;325:3;316:6;;:12;;;;;;;;;;;;;;;;;;271:64;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0\n\npragma solidity >=0.7.0 <0.9.0;\n\n/**\n * @title Storage\n * @dev Store & retrieve value in a variable\n */\ncontract Storage {\n\n    uint128 number;\n\n    /**\n     * @dev Store value in variable\n     * @param num value to store\n     */\n    function store(uint128 num) public {\n        number = num;\n    }\n\n    /**\n     * @dev Return value \n     * @return value of 'number'\n     */\n    function retrieve() public view returns (uint256){\n        return number;\n    }\n}",
+  "sourcePath": "/home/zcluster55/Documents/Research/Solidity-Examples/ballot-example/contracts/Storage.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Storage.sol",
+    "exportedSymbols": {
+      "Storage": [
+        498
+      ]
+    },
+    "id": 499,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 474,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:31:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 475,
+          "nodeType": "StructuredDocumentation",
+          "src": "70:70:4",
+          "text": " @title Storage\n @dev Store & retrieve value in a variable"
+        },
+        "fullyImplemented": true,
+        "id": 498,
+        "linearizedBaseContracts": [
+          498
+        ],
+        "name": "Storage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 477,
+            "mutability": "mutable",
+            "name": "number",
+            "nodeType": "VariableDeclaration",
+            "scope": 498,
+            "src": "165:14:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint128",
+              "typeString": "uint128"
+            },
+            "typeName": {
+              "id": 476,
+              "name": "uint128",
+              "nodeType": "ElementaryTypeName",
+              "src": "165:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint128",
+                "typeString": "uint128"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 487,
+              "nodeType": "Block",
+              "src": "306:29:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 485,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 483,
+                      "name": "number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 477,
+                      "src": "316:6:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 484,
+                      "name": "num",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 480,
+                      "src": "325:3:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "316:12:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 486,
+                  "nodeType": "ExpressionStatement",
+                  "src": "316:12:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 478,
+              "nodeType": "StructuredDocumentation",
+              "src": "186:80:4",
+              "text": " @dev Store value in variable\n @param num value to store"
+            },
+            "functionSelector": "dc6ff17a",
+            "id": 488,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "store",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 481,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 480,
+                  "mutability": "mutable",
+                  "name": "num",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 488,
+                  "src": "286:11:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 479,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "286:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "285:13:4"
+            },
+            "returnParameters": {
+              "id": 482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:0:4"
+            },
+            "scope": 498,
+            "src": "271:64:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 496,
+              "nodeType": "Block",
+              "src": "465:30:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 494,
+                    "name": "number",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 477,
+                    "src": "482:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "functionReturnParameters": 493,
+                  "id": 495,
+                  "nodeType": "Return",
+                  "src": "475:13:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 489,
+              "nodeType": "StructuredDocumentation",
+              "src": "341:70:4",
+              "text": " @dev Return value \n @return value of 'number'"
+            },
+            "functionSelector": "2e64cec1",
+            "id": 497,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "retrieve",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 490,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "433:2:4"
+            },
+            "returnParameters": {
+              "id": 493,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 492,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 497,
+                  "src": "457:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 491,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "456:9:4"
+            },
+            "scope": 498,
+            "src": "416:79:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 499,
+        "src": "141:356:4"
+      }
+    ],
+    "src": "37:460:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Storage.sol",
+      "exportedSymbols": {
+        "Storage": [
+          498
+        ]
+      },
+      "license": "GPL-3.0"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.7",
+            ".0",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 474,
+        "name": "PragmaDirective",
+        "src": "37:31:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            498
+          ],
+          "name": "Storage",
+          "scope": 499
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": " @title Storage\n @dev Store & retrieve value in a variable"
+            },
+            "id": 475,
+            "name": "StructuredDocumentation",
+            "src": "70:70:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "number",
+              "scope": 498,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint128",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint128",
+                  "type": "uint128"
+                },
+                "id": 476,
+                "name": "ElementaryTypeName",
+                "src": "165:7:4"
+              }
+            ],
+            "id": 477,
+            "name": "VariableDeclaration",
+            "src": "165:14:4"
+          },
+          {
+            "attributes": {
+              "functionSelector": "dc6ff17a",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "store",
+              "scope": 498,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Store value in variable\n @param num value to store"
+                },
+                "id": 478,
+                "name": "StructuredDocumentation",
+                "src": "186:80:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "num",
+                      "scope": 488,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint128",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint128",
+                          "type": "uint128"
+                        },
+                        "id": 479,
+                        "name": "ElementaryTypeName",
+                        "src": "286:7:4"
+                      }
+                    ],
+                    "id": 480,
+                    "name": "VariableDeclaration",
+                    "src": "286:11:4"
+                  }
+                ],
+                "id": 481,
+                "name": "ParameterList",
+                "src": "285:13:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 482,
+                "name": "ParameterList",
+                "src": "306:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint128"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 477,
+                              "type": "uint128",
+                              "value": "number"
+                            },
+                            "id": 483,
+                            "name": "Identifier",
+                            "src": "316:6:4"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 480,
+                              "type": "uint128",
+                              "value": "num"
+                            },
+                            "id": 484,
+                            "name": "Identifier",
+                            "src": "325:3:4"
+                          }
+                        ],
+                        "id": 485,
+                        "name": "Assignment",
+                        "src": "316:12:4"
+                      }
+                    ],
+                    "id": 486,
+                    "name": "ExpressionStatement",
+                    "src": "316:12:4"
+                  }
+                ],
+                "id": 487,
+                "name": "Block",
+                "src": "306:29:4"
+              }
+            ],
+            "id": 488,
+            "name": "FunctionDefinition",
+            "src": "271:64:4"
+          },
+          {
+            "attributes": {
+              "functionSelector": "2e64cec1",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "retrieve",
+              "scope": 498,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": " @dev Return value \n @return value of 'number'"
+                },
+                "id": 489,
+                "name": "StructuredDocumentation",
+                "src": "341:70:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 490,
+                "name": "ParameterList",
+                "src": "433:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 497,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 491,
+                        "name": "ElementaryTypeName",
+                        "src": "457:7:4"
+                      }
+                    ],
+                    "id": 492,
+                    "name": "VariableDeclaration",
+                    "src": "457:7:4"
+                  }
+                ],
+                "id": 493,
+                "name": "ParameterList",
+                "src": "456:9:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 493
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 477,
+                          "type": "uint128",
+                          "value": "number"
+                        },
+                        "id": 494,
+                        "name": "Identifier",
+                        "src": "482:6:4"
+                      }
+                    ],
+                    "id": 495,
+                    "name": "Return",
+                    "src": "475:13:4"
+                  }
+                ],
+                "id": 496,
+                "name": "Block",
+                "src": "465:30:4"
+              }
+            ],
+            "id": 497,
+            "name": "FunctionDefinition",
+            "src": "416:79:4"
+          }
+        ],
+        "id": 498,
+        "name": "ContractDefinition",
+        "src": "141:356:4"
+      }
+    ],
+    "id": 499,
+    "name": "SourceUnit",
+    "src": "37:460:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xb0540270d67bF4Df967Dd89DF536Fb902900704D",
+      "transactionHash": "0x9baa6670bf8790330eda718d4c11d64857bc6b7204e3981f930e29023689eefd"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-18T06:58:45.819Z",
+  "devdoc": {
+    "details": "Store & retrieve value in a variable",
+    "kind": "dev",
+    "methods": {
+      "retrieve()": {
+        "details": "Return value ",
+        "returns": {
+          "_0": "value of 'number'"
+        }
+      },
+      "store(uint128)": {
+        "details": "Store value in variable",
+        "params": {
+          "num": "value to store"
+        }
+      }
+    },
+    "title": "Storage",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

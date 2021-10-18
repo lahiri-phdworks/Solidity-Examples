@@ -1,0 +1,1661 @@
+{
+  "contractName": "Address",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getBytes32ArrayForInput",
+      "outputs": [
+        {
+          "internalType": "bytes32[10]",
+          "name": "b32Arr",
+          "type": "bytes32[10]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getBytes32ArrayForInput\",\"outputs\":[{\"internalType\":\"bytes32[10]\",\"name\":\"b32Arr\",\"type\":\"bytes32[10]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Address.sol\":\"Address\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Address.sol\":{\"keccak256\":\"0x48bf185b9c3c8b24abc3a9a0955387737cfff6deac67d1f3367b65651daeffda\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://e8aded5085a7f273898fc8cbbe3c5bfbd02998a0e75f22c4b397bef0495aa570\",\"dweb:/ipfs/QmYQKymkrPvGxQ8KjAxsU9GEQzt1YyDMPT7y9c5PjFejPb\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610261806100206000396000f3fe608060405234801561001057600080fd5b506004361061002a5760003560e01c806265f9b51461002f575b600080fd5b610037610075565b6040518082600a60200280838360005b83811015610062578082015181840152602081019050610047565b5050505090500191505060405180910390f35b61007d610208565b6040518061014001604052807f53756d697400000000000000000000000000000000000000000000000000000081526020017f526176690000000000000000000000000000000000000000000000000000000081526020017f52616a616e00000000000000000000000000000000000000000000000000000081526020017f526167687500000000000000000000000000000000000000000000000000000081526020017f45746865724b696e67000000000000000000000000000000000000000000000081526020017f5368656b6861720000000000000000000000000000000000000000000000000081526020017f436f6e74726163746f720000000000000000000000000000000000000000000081526020017f50756c75626b000000000000000000000000000000000000000000000000000081526020017f426974636f696e4b696e6700000000000000000000000000000000000000000081526020017f44616f4865636b65720000000000000000000000000000000000000000000000815250905090565b604051806101400160405280600a9060208202803683378082019150509050509056fea2646970667358221220905b13c0eaf3f5247adafdeeab1ff180a7d4102a4e2111e4a3bcaa6002d49bb564736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002a5760003560e01c806265f9b51461002f575b600080fd5b610037610075565b6040518082600a60200280838360005b83811015610062578082015181840152602081019050610047565b5050505090500191505060405180910390f35b61007d610208565b6040518061014001604052807f53756d697400000000000000000000000000000000000000000000000000000081526020017f526176690000000000000000000000000000000000000000000000000000000081526020017f52616a616e00000000000000000000000000000000000000000000000000000081526020017f526167687500000000000000000000000000000000000000000000000000000081526020017f45746865724b696e67000000000000000000000000000000000000000000000081526020017f5368656b6861720000000000000000000000000000000000000000000000000081526020017f436f6e74726163746f720000000000000000000000000000000000000000000081526020017f50756c75626b000000000000000000000000000000000000000000000000000081526020017f426974636f696e4b696e6700000000000000000000000000000000000000000081526020017f44616f4865636b65720000000000000000000000000000000000000000000000815250905090565b604051806101400160405280600a9060208202803683378082019150509050509056fea2646970667358221220905b13c0eaf3f5247adafdeeab1ff180a7d4102a4e2111e4a3bcaa6002d49bb564736f6c63430007060033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "70:344:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "70:344:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;93:319;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;149:25;;:::i;:::-;186:219;;;;;;;;196:16;186:219;;;;214:15;186:219;;;;231:16;186:219;;;;249:16;186:219;;;;267:20;186:219;;;;298:18;186:219;;;;318:21;186:219;;;;341:17;186:219;;;;360:22;186:219;;;;384:20;186:219;;;;;93:319;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0\n\npragma solidity >=0.7.0 <0.9.0;\n\ncontract Address {\n    function getBytes32ArrayForInput() pure public returns (bytes32[10] memory b32Arr) {\n        b32Arr = [bytes32(\"Sumit\"), bytes32(\"Ravi\"), bytes32(\"Rajan\"), bytes32(\"Raghu\"), bytes32(\"EtherKing\"), \n        bytes32(\"Shekhar\"), bytes32(\"Contractor\"), bytes32(\"Pulubk\"), bytes32(\"BitcoinKing\"), bytes32(\"DaoHecker\")];\n    }\n}\n",
+  "sourcePath": "/home/zcluster55/Documents/Research/Solidity-Examples/ballot-example/contracts/Address.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Address.sol",
+    "exportedSymbols": {
+      "Address": [
+        54
+      ]
+    },
+    "id": 55,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:31:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 54,
+        "linearizedBaseContracts": [
+          54
+        ],
+        "name": "Address",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 52,
+              "nodeType": "Block",
+              "src": "176:236:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 50,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 8,
+                      "name": "b32Arr",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "186:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$10_memory_ptr",
+                        "typeString": "bytes32[10] memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "components": [
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "53756d6974",
+                              "id": 11,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "204:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_debf4c25c7b431bf090bc648e4578af710aa40f27d2ab7aafbe5547ea97f3f42",
+                                "typeString": "literal_string \"Sumit\""
+                              },
+                              "value": "Sumit"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_debf4c25c7b431bf090bc648e4578af710aa40f27d2ab7aafbe5547ea97f3f42",
+                                "typeString": "literal_string \"Sumit\""
+                              }
+                            ],
+                            "id": 10,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "196:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 9,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "196:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 12,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "196:16:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "52617669",
+                              "id": 15,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "222:6:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_6b1cd787e52a0c7de504eb7d73bb94ea5704becac0a6fa254c5fe9c17f67a14d",
+                                "typeString": "literal_string \"Ravi\""
+                              },
+                              "value": "Ravi"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_6b1cd787e52a0c7de504eb7d73bb94ea5704becac0a6fa254c5fe9c17f67a14d",
+                                "typeString": "literal_string \"Ravi\""
+                              }
+                            ],
+                            "id": 14,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "214:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 13,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "214:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 16,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "214:15:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "52616a616e",
+                              "id": 19,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "239:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_59ce32ea96ed8c7416c03463f53a124e4084d40825d6b939dc964c70d85f9c70",
+                                "typeString": "literal_string \"Rajan\""
+                              },
+                              "value": "Rajan"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_59ce32ea96ed8c7416c03463f53a124e4084d40825d6b939dc964c70d85f9c70",
+                                "typeString": "literal_string \"Rajan\""
+                              }
+                            ],
+                            "id": 18,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "231:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 17,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "231:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 20,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "231:16:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "5261676875",
+                              "id": 23,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "257:7:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_c1af59bdb9c0c9fb2e34c515ce1e6b07c7c411ab5b7ca44cdae3b99dc48a485a",
+                                "typeString": "literal_string \"Raghu\""
+                              },
+                              "value": "Raghu"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_c1af59bdb9c0c9fb2e34c515ce1e6b07c7c411ab5b7ca44cdae3b99dc48a485a",
+                                "typeString": "literal_string \"Raghu\""
+                              }
+                            ],
+                            "id": 22,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "249:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 21,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "249:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 24,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "249:16:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "45746865724b696e67",
+                              "id": 27,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "275:11:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_fb89c024447197d7e90a9beab3c1008e23f111de1c7a1620db8244ae6c94de97",
+                                "typeString": "literal_string \"EtherKing\""
+                              },
+                              "value": "EtherKing"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_fb89c024447197d7e90a9beab3c1008e23f111de1c7a1620db8244ae6c94de97",
+                                "typeString": "literal_string \"EtherKing\""
+                              }
+                            ],
+                            "id": 26,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "267:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 25,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "267:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 28,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "267:20:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "5368656b686172",
+                              "id": 31,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "306:9:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_93fb43dfd566adf67c9e95a539ab1413e13818e80632e11b958a36db91128505",
+                                "typeString": "literal_string \"Shekhar\""
+                              },
+                              "value": "Shekhar"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_93fb43dfd566adf67c9e95a539ab1413e13818e80632e11b958a36db91128505",
+                                "typeString": "literal_string \"Shekhar\""
+                              }
+                            ],
+                            "id": 30,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "298:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 29,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "298:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 32,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "298:18:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "436f6e74726163746f72",
+                              "id": 35,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "326:12:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_a4f0ce6622cf175a78786164c8365d1d14fbb867cd109e47090ad7c145286f9e",
+                                "typeString": "literal_string \"Contractor\""
+                              },
+                              "value": "Contractor"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_a4f0ce6622cf175a78786164c8365d1d14fbb867cd109e47090ad7c145286f9e",
+                                "typeString": "literal_string \"Contractor\""
+                              }
+                            ],
+                            "id": 34,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "318:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 33,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "318:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 36,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "318:21:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "50756c75626b",
+                              "id": 39,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "349:8:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_8ee73785451873d6355ac91d56f70b9bd49504788896fa1881a680dd02248a45",
+                                "typeString": "literal_string \"Pulubk\""
+                              },
+                              "value": "Pulubk"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_8ee73785451873d6355ac91d56f70b9bd49504788896fa1881a680dd02248a45",
+                                "typeString": "literal_string \"Pulubk\""
+                              }
+                            ],
+                            "id": 38,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "341:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 37,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "341:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 40,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "341:17:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "426974636f696e4b696e67",
+                              "id": 43,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "368:13:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_350a2c25bb0549900108c6d6ce54c5f5a87567897ddba8e2ece709c422b00f4c",
+                                "typeString": "literal_string \"BitcoinKing\""
+                              },
+                              "value": "BitcoinKing"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_350a2c25bb0549900108c6d6ce54c5f5a87567897ddba8e2ece709c422b00f4c",
+                                "typeString": "literal_string \"BitcoinKing\""
+                              }
+                            ],
+                            "id": 42,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "360:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 41,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "360:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 44,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "360:22:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "44616f4865636b6572",
+                              "id": 47,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "392:11:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_f99af3360c8f202febbb31657f89bbc3dea98f99cc5ff7669d06fb95bdb1a1f9",
+                                "typeString": "literal_string \"DaoHecker\""
+                              },
+                              "value": "DaoHecker"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_f99af3360c8f202febbb31657f89bbc3dea98f99cc5ff7669d06fb95bdb1a1f9",
+                                "typeString": "literal_string \"DaoHecker\""
+                              }
+                            ],
+                            "id": 46,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "384:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_bytes32_$",
+                              "typeString": "type(bytes32)"
+                            },
+                            "typeName": {
+                              "id": 45,
+                              "name": "bytes32",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "384:7:0",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 48,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "384:20:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        }
+                      ],
+                      "id": 49,
+                      "isConstant": false,
+                      "isInlineArray": true,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "TupleExpression",
+                      "src": "195:210:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_bytes32_$10_memory_ptr",
+                        "typeString": "bytes32[10] memory"
+                      }
+                    },
+                    "src": "186:219:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$10_memory_ptr",
+                      "typeString": "bytes32[10] memory"
+                    }
+                  },
+                  "id": 51,
+                  "nodeType": "ExpressionStatement",
+                  "src": "186:219:0"
+                }
+              ]
+            },
+            "functionSelector": "0065f9b5",
+            "id": 53,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBytes32ArrayForInput",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "125:2:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "mutability": "mutable",
+                  "name": "b32Arr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 53,
+                  "src": "149:25:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$10_memory_ptr",
+                    "typeString": "bytes32[10]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "149:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 5,
+                    "length": {
+                      "hexValue": "3130",
+                      "id": 4,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "157:2:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_10_by_1",
+                        "typeString": "int_const 10"
+                      },
+                      "value": "10"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "149:11:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$10_storage_ptr",
+                      "typeString": "bytes32[10]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "148:27:0"
+            },
+            "scope": 54,
+            "src": "93:319:0",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 55,
+        "src": "70:344:0"
+      }
+    ],
+    "src": "37:378:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Address.sol",
+      "exportedSymbols": {
+        "Address": [
+          54
+        ]
+      },
+      "license": "GPL-3.0"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.7",
+            ".0",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "37:31:0"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            54
+          ],
+          "name": "Address",
+          "scope": 55
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "0065f9b5",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getBytes32ArrayForInput",
+              "scope": 54,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2,
+                "name": "ParameterList",
+                "src": "125:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "b32Arr",
+                      "scope": 53,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes32[10]",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "bytes32[10]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "bytes32",
+                              "type": "bytes32"
+                            },
+                            "id": 3,
+                            "name": "ElementaryTypeName",
+                            "src": "149:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "3130",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "number",
+                              "type": "int_const 10",
+                              "value": "10"
+                            },
+                            "id": 4,
+                            "name": "Literal",
+                            "src": "157:2:0"
+                          }
+                        ],
+                        "id": 5,
+                        "name": "ArrayTypeName",
+                        "src": "149:11:0"
+                      }
+                    ],
+                    "id": 6,
+                    "name": "VariableDeclaration",
+                    "src": "149:25:0"
+                  }
+                ],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "148:27:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "bytes32[10] memory"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 6,
+                              "type": "bytes32[10] memory",
+                              "value": "b32Arr"
+                            },
+                            "id": 8,
+                            "name": "Identifier",
+                            "src": "186:6:0"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isInlineArray": true,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "type": "bytes32[10] memory"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_debf4c25c7b431bf090bc648e4578af710aa40f27d2ab7aafbe5547ea97f3f42",
+                                          "typeString": "literal_string \"Sumit\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 9,
+                                        "name": "ElementaryTypeName",
+                                        "src": "196:7:0"
+                                      }
+                                    ],
+                                    "id": 10,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "196:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "53756d6974",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Sumit\"",
+                                      "value": "Sumit"
+                                    },
+                                    "id": 11,
+                                    "name": "Literal",
+                                    "src": "204:7:0"
+                                  }
+                                ],
+                                "id": 12,
+                                "name": "FunctionCall",
+                                "src": "196:16:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_6b1cd787e52a0c7de504eb7d73bb94ea5704becac0a6fa254c5fe9c17f67a14d",
+                                          "typeString": "literal_string \"Ravi\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 13,
+                                        "name": "ElementaryTypeName",
+                                        "src": "214:7:0"
+                                      }
+                                    ],
+                                    "id": 14,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "214:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "52617669",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Ravi\"",
+                                      "value": "Ravi"
+                                    },
+                                    "id": 15,
+                                    "name": "Literal",
+                                    "src": "222:6:0"
+                                  }
+                                ],
+                                "id": 16,
+                                "name": "FunctionCall",
+                                "src": "214:15:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_59ce32ea96ed8c7416c03463f53a124e4084d40825d6b939dc964c70d85f9c70",
+                                          "typeString": "literal_string \"Rajan\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 17,
+                                        "name": "ElementaryTypeName",
+                                        "src": "231:7:0"
+                                      }
+                                    ],
+                                    "id": 18,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "231:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "52616a616e",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Rajan\"",
+                                      "value": "Rajan"
+                                    },
+                                    "id": 19,
+                                    "name": "Literal",
+                                    "src": "239:7:0"
+                                  }
+                                ],
+                                "id": 20,
+                                "name": "FunctionCall",
+                                "src": "231:16:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_c1af59bdb9c0c9fb2e34c515ce1e6b07c7c411ab5b7ca44cdae3b99dc48a485a",
+                                          "typeString": "literal_string \"Raghu\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 21,
+                                        "name": "ElementaryTypeName",
+                                        "src": "249:7:0"
+                                      }
+                                    ],
+                                    "id": 22,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "249:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "5261676875",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Raghu\"",
+                                      "value": "Raghu"
+                                    },
+                                    "id": 23,
+                                    "name": "Literal",
+                                    "src": "257:7:0"
+                                  }
+                                ],
+                                "id": 24,
+                                "name": "FunctionCall",
+                                "src": "249:16:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_fb89c024447197d7e90a9beab3c1008e23f111de1c7a1620db8244ae6c94de97",
+                                          "typeString": "literal_string \"EtherKing\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 25,
+                                        "name": "ElementaryTypeName",
+                                        "src": "267:7:0"
+                                      }
+                                    ],
+                                    "id": 26,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "267:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "45746865724b696e67",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"EtherKing\"",
+                                      "value": "EtherKing"
+                                    },
+                                    "id": 27,
+                                    "name": "Literal",
+                                    "src": "275:11:0"
+                                  }
+                                ],
+                                "id": 28,
+                                "name": "FunctionCall",
+                                "src": "267:20:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_93fb43dfd566adf67c9e95a539ab1413e13818e80632e11b958a36db91128505",
+                                          "typeString": "literal_string \"Shekhar\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 29,
+                                        "name": "ElementaryTypeName",
+                                        "src": "298:7:0"
+                                      }
+                                    ],
+                                    "id": 30,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "298:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "5368656b686172",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Shekhar\"",
+                                      "value": "Shekhar"
+                                    },
+                                    "id": 31,
+                                    "name": "Literal",
+                                    "src": "306:9:0"
+                                  }
+                                ],
+                                "id": 32,
+                                "name": "FunctionCall",
+                                "src": "298:18:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_a4f0ce6622cf175a78786164c8365d1d14fbb867cd109e47090ad7c145286f9e",
+                                          "typeString": "literal_string \"Contractor\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 33,
+                                        "name": "ElementaryTypeName",
+                                        "src": "318:7:0"
+                                      }
+                                    ],
+                                    "id": 34,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "318:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "436f6e74726163746f72",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Contractor\"",
+                                      "value": "Contractor"
+                                    },
+                                    "id": 35,
+                                    "name": "Literal",
+                                    "src": "326:12:0"
+                                  }
+                                ],
+                                "id": 36,
+                                "name": "FunctionCall",
+                                "src": "318:21:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_8ee73785451873d6355ac91d56f70b9bd49504788896fa1881a680dd02248a45",
+                                          "typeString": "literal_string \"Pulubk\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 37,
+                                        "name": "ElementaryTypeName",
+                                        "src": "341:7:0"
+                                      }
+                                    ],
+                                    "id": 38,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "341:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "50756c75626b",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"Pulubk\"",
+                                      "value": "Pulubk"
+                                    },
+                                    "id": 39,
+                                    "name": "Literal",
+                                    "src": "349:8:0"
+                                  }
+                                ],
+                                "id": 40,
+                                "name": "FunctionCall",
+                                "src": "341:17:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_350a2c25bb0549900108c6d6ce54c5f5a87567897ddba8e2ece709c422b00f4c",
+                                          "typeString": "literal_string \"BitcoinKing\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 41,
+                                        "name": "ElementaryTypeName",
+                                        "src": "360:7:0"
+                                      }
+                                    ],
+                                    "id": 42,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "360:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "426974636f696e4b696e67",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"BitcoinKing\"",
+                                      "value": "BitcoinKing"
+                                    },
+                                    "id": 43,
+                                    "name": "Literal",
+                                    "src": "368:13:0"
+                                  }
+                                ],
+                                "id": 44,
+                                "name": "FunctionCall",
+                                "src": "360:22:0"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "bytes32",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_stringliteral_f99af3360c8f202febbb31657f89bbc3dea98f99cc5ff7669d06fb95bdb1a1f9",
+                                          "typeString": "literal_string \"DaoHecker\""
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(bytes32)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "bytes32"
+                                        },
+                                        "id": 45,
+                                        "name": "ElementaryTypeName",
+                                        "src": "384:7:0"
+                                      }
+                                    ],
+                                    "id": 46,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "384:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "44616f4865636b6572",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "string",
+                                      "type": "literal_string \"DaoHecker\"",
+                                      "value": "DaoHecker"
+                                    },
+                                    "id": 47,
+                                    "name": "Literal",
+                                    "src": "392:11:0"
+                                  }
+                                ],
+                                "id": 48,
+                                "name": "FunctionCall",
+                                "src": "384:20:0"
+                              }
+                            ],
+                            "id": 49,
+                            "name": "TupleExpression",
+                            "src": "195:210:0"
+                          }
+                        ],
+                        "id": 50,
+                        "name": "Assignment",
+                        "src": "186:219:0"
+                      }
+                    ],
+                    "id": 51,
+                    "name": "ExpressionStatement",
+                    "src": "186:219:0"
+                  }
+                ],
+                "id": 52,
+                "name": "Block",
+                "src": "176:236:0"
+              }
+            ],
+            "id": 53,
+            "name": "FunctionDefinition",
+            "src": "93:319:0"
+          }
+        ],
+        "id": 54,
+        "name": "ContractDefinition",
+        "src": "70:344:0"
+      }
+    ],
+    "id": 55,
+    "name": "SourceUnit",
+    "src": "37:378:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x5dc1363fc9C592F7E346C502FF9E08C9a840F164",
+      "transactionHash": "0x445ef76870cfa7ae58960ca102da3b1b254193243118eba9fc053319ae240bcc"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-18T06:58:45.768Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
