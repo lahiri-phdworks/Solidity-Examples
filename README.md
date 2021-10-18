@@ -2,8 +2,8 @@
 
 - Follow the tutorials here : [Truffle](https://www.trufflesuite.com/docs/truffle/getting-started/installation)
 - Make sure `Node.js` & `npm` package manager is installed and accessible from the command line.
-    - [Node.js](https://nodejs.org/en/)
-    - [Truffle](https://github.com/trufflesuite/truffle)
+  - [Node.js](https://nodejs.org/en/)
+  - [Truffle](https://github.com/trufflesuite/truffle)
 
 ## Running Examples
 
@@ -39,7 +39,7 @@ $ truffle migrate
 $ truffle deploy
     ...
 
-# For testing 
+# For testing
 $ truffle test
     ...
     Using network 'development'.
@@ -88,4 +88,19 @@ $ truffle(development)> instance.sendCoin(accounts[1], 10, {from: accounts[0]})
 ...
 ...
 $ truffle(development)> .exit
+```
+
+## Running Script
+
+Logging and running each command from truffle console can be tedious.
+We can use a script (written in JavaScript) to execute on development network. See ([truffle-run.js](#contract-samples/truffle-run.js))
+
+```bash
+$ truffle exec ./truffle-run.js --network development
+...
+
+Using network 'development'.
+
+0xdAd324Ac3f539785b8E02329fFd34e7657a16064
+99713108700000000000
 ```
