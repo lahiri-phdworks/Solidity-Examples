@@ -1,4 +1,4 @@
-const Sample = artifacts.require("./Sample.sol")
+const Sample = artifacts.require("Sample");
 
 module.exports = async function(callback) {
 
@@ -14,4 +14,5 @@ module.exports = async function(callback) {
     
     var result = await sampleInstance.rectangle(50, 1)
     console.log(result)
+    
 }

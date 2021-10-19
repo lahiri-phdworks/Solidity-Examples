@@ -1,13 +1,19 @@
 # Solidity-Examples
 
 - Follow the tutorials here : [Truffle](https://www.trufflesuite.com/docs/truffle/getting-started/installation)
-- Make sure `Node.js` & `npm` package manager is installed and accessible from the command line.
+- Make sure `Node.js` & `npm` package manager is installed and accessible from the command line along with `truffle`.
   - [Node.js](https://nodejs.org/en/)
   - [Truffle](https://github.com/trufflesuite/truffle)
 
+## Contracts
+
+The running examples and vulnerable contracts are in `contract-samples` folder. See [README.md](contract-samples/README.md)
+Other folders contains `token` or `full` project examples that can be run for better understanding.
+
 ## Running Examples
 
-Make sure you have [`Ganache`](https://www.trufflesuite.com/ganache) test blockchain running locally in your machine. Run `*.AppImage` in `ganache-blockchain` folder. (not included for GIT LFS)
+Make sure you have [`Ganache`](https://www.trufflesuite.com/ganache) test blockchain running locally in your machine.
+Run `*.AppImage` with `chmod a+x` from the download site.
 
 - [QuickStart](https://www.trufflesuite.com/docs/truffle/quickstart)
 - [Compiling a Contract using truffle.](https://www.trufflesuite.com/docs/truffle/getting-started/compiling-contracts)
@@ -77,6 +83,8 @@ $ truffle test
 
 ## Other Commands
 
+Smart contract functions to run on the `MetaCoin-example` folder.
+
 ```bash
 $ truffle exec src/getAddress.js --network development --compile
 $ truffle console
@@ -93,14 +101,15 @@ $ truffle(development)> .exit
 ## Running Script
 
 Logging and running each command from truffle console can be tedious.
-We can use a script (written in JavaScript) to execute on development network. See ([truffle-run.js](#contract-samples/truffle-run.js))
+We can use a script (written in JavaScript) to execute on development network. See ([truffle-run.js](contract-samples/example_run.js))
 
 ```bash
-$ truffle exec ./truffle-run.js --network development
+$ truffle exec ./example_run.js --network development
 ...
 
 Using network 'development'.
 
 0xdAd324Ac3f539785b8E02329fFd34e7657a16064
 99713108700000000000
+...
 ```
