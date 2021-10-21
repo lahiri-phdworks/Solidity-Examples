@@ -9,6 +9,7 @@ Run `*.AppImage` with `chmod a+x` from the download site.
   - [Truffle](https://github.com/trufflesuite/truffle)
 
 - Re-entrancy Attack is setup in `contracts/Attack.sol` & `contract/EtherStore.sol`. Adapted from [`Solidity by Example`](https://solidity-by-example.org/hacks/re-entrancy/)
+- Race-condition is in `contracts/ERC20.sol` contract taken from [SWC-114 Registry Entry](https://swcregistry.io/docs/SWC-114).
 
 ```bash
 # setting up
