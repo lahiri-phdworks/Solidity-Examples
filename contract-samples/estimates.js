@@ -8,7 +8,7 @@ module.exports = (callback) => {
         TestContract.deployed().then((instance) => {
             // Use the keyword 'estimateGas' after the function name to get 
             // the gas estimation for this particular function 
-            return instance.addNums1.estimateGas(5, 45);
+            return instance.whileTrue.estimateGas()
         }).then((result) => {
             var gas = Number(result);
             console.log("gas estimation = " + gas + " units");

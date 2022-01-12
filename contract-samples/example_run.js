@@ -15,4 +15,12 @@ module.exports = async function(callback) {
     var result = await sampleInstance.rectangle(50, 1)
     console.log(result)
     
+    var result = await sampleInstance.getBalanceOwn()
+    console.log(result.toString())
+    
+    // Exceed the gass block limit : 300000000,  30000000  
+    var result = await sampleInstance.whileTrue(100, 1, 
+        accounts[1], {from: accounts[0], value: web3.utils.toWei('1', 'ether'), gas:999999})
+    console.log(result.toString())
+
 }

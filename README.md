@@ -5,6 +5,11 @@
   - [Node.js](https://nodejs.org/en/)
   - [Truffle](https://github.com/trufflesuite/truffle)
 
+## Useful Links
+
+- [Gas for EVM OpCodes.](https://github.com/wolflo/evm-opcodes/blob/main/gas.md)
+- [Official Gas Prices.](https://github.com/ethereum/go-ethereum/blob/master/params/protocol_params.go)
+
 ## Contracts
 
 The running examples and vulnerable contracts are in `contract-samples` folder. See [README.md](contract-samples/README.md)
