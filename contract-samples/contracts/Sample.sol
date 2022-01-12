@@ -5,6 +5,8 @@ import "hardhat/console.sol";
 contract Sample {
     uint256 counter = 0;
 
+    constructor() public payable {}
+
     function returnOne() public pure returns (uint256) {
         return 1;
     }
@@ -34,17 +36,19 @@ contract Sample {
         addResult = a * (b + 42);
     }
 
-    function whileTrue(
+    function transferToAddressStub(
         uint256 a,
         uint256 b,
         address payable addressToSend
-    ) external payable {
-        require(msg.value >= 1 ether, "More than 1 ether needed");
-        uint256 count = 25;
-        if (counter != a && msg.sender.balance >= b) {
-            while (count >= 0) {
-                // addressToSend.transfer(0.0001);
-                console.log("Ran Loop. \n");
+    ) public payable {
+        // require(msg.value >= 1 ether, "More than 1 ether needed");
+        uint256 count = b;
+        if (counter != a) {
+            // count may go negative : revert.
+            while (count != 0) {
+                // reverts if msg.value is lower than 1 ether here.
+                // Ether is lost.
+                addressToSend.transfer(1 ether);
                 count = count - 1;
             }
         }
@@ -55,5 +59,9 @@ contract Sample {
         payable
     {
         addressToSend.transfer(amount);
+    }
+
+    function transferEther(address payable addressToSend) public {
+        addressToSend.transfer(1 ether);
     }
 }
