@@ -30,4 +30,24 @@ contract Sample {
     {
         addResult = a * (b + 42);
     }
+    
+    // This gives the amount/ether strored in the smart contract.
+    function sendContractEther(uint256 a, uint256 b, uint256 bal) public payable {
+        uint256 c = a + b;
+        (bool sent, bytes memory data) = payable(address(this))
+                                    .call{value:1 ether}("");
+    }
+    
+    // web3.utils.toWei('1', 'ether') else goes to fallback since
+    // arguments error.
+    function transferEther(address payable addressToSend, uint256 amount)
+        public
+        payable
+    {
+        (bool sent, bytes memory data) = addressToSend
+                           .call{value:amount}("");
+        require(sent, "Failed to send Ether");
+    }
+    
+
 }
