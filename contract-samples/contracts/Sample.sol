@@ -2,6 +2,9 @@
 pragma solidity >=0.4.2 <0.9.0;
 
 contract Sample {
+    uint256 x = 0;
+    uint256 z = 9088;
+    
     function returnOne() public pure returns (uint256) {
         return 1;
     }
@@ -33,7 +36,7 @@ contract Sample {
     
     // This gives the amount/ether strored in the smart contract.
     function sendContractEther(uint256 a, uint256 b, uint256 bal) public payable {
-        uint256 c = a + b;
+        uint256 x = a + b;
         (bool sent, bytes memory data) = payable(address(this))
                                     .call{value:1 ether}("");
     }

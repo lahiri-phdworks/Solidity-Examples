@@ -33,8 +33,7 @@
     },
     {
       "stateMutability": "payable",
-      "type": "fallback",
-      "payable": true
+      "type": "fallback"
     },
     {
       "inputs": [],
@@ -47,21 +46,18 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "stateMutability": "payable",
-      "type": "receive",
-      "payable": true
+      "type": "receive"
     },
     {
       "inputs": [],
       "name": "attack",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -74,8 +70,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -88,8 +83,7 @@
       "name": "transferToaddress",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_etherStoreAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"counter\",\"type\":\"uint256\"}],\"name\":\"Logger\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[],\"name\":\"attack\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"etherStore\",\"outputs\":[{\"internalType\":\"contract EtherStore\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"addressToSend\",\"type\":\"address\"}],\"name\":\"transferToaddress\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Attack.sol\":\"Attack\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Attack.sol\":{\"keccak256\":\"0xa32276b252eed6b7d9d9c4b009bcd31adac88a42e01aa0c54520a883137a8cc4\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://f53c1c45c6031215721ba79a0ebadaea63b1f1719350a7463a606cab8f52a297\",\"dweb:/ipfs/Qmeqa32BzzvZJbqdVUDhzB8qq75CSX3Bh2prp2H3q5LEVG\"]},\"project:/contracts/EtherStore.sol\":{\"keccak256\":\"0x47bc677648b74c872f21cff07900c19857609156612dafdfb235c2fd2695b2ce\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6bee339d13ee60204dfaf76fc256a4f41052772e0900d23e381a4e00dcde0efc\",\"dweb:/ipfs/QmcVs3A3J6qeTN2bxF9JVV3CEJCu3bd12k5WwvdWJGdory\"]}},\"version\":1}",
@@ -6613,13 +6607,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x375F91686d57F003C1b9e710b5c07082A034A39e",
-      "transactionHash": "0xa4f66a961d7b053a6f381acfe3baf6fa14f7cdea2d1287517e93d12a3027444b"
+      "address": "0x115f653216d2F6fFf023225F9291d9d6396Da2d5",
+      "transactionHash": "0xfb332a16289b5fe90c123f8065b33ed0f429f00229385066b20c5973cc68002b"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-15T15:41:07.426Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-01-16T13:15:33.182Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

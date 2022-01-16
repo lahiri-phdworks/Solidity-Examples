@@ -9,13 +9,17 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.2",
     "@remix-project/remix-debug": "^0.5.9",
+    "@truffle/box": "^2.1.34",
+    "@truffle/codec": "^0.11.22",
     "@truffle/compile-solidity": "^6.0.8",
     "@truffle/debugger": "^9.2.11",
     "@truffle/hdwallet-provider": "^1.5.1",
+    "@truffle/workflow-compile": "^3.2.47",
     "fs-extra": "^10.0.0",
     "ganache": "^6.4.5",
     "ganache-core": "^2.13.2",
     "install": "^0.13.0",
+    "loadash": "^1.0.0",
     "npm": "^8.3.1",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.6.0"

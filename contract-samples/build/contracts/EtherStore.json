@@ -18,16 +18,14 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
       "name": "deposit",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -47,8 +45,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"balances\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/EtherStore.sol\":\"EtherStore\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/EtherStore.sol\":{\"keccak256\":\"0x47bc677648b74c872f21cff07900c19857609156612dafdfb235c2fd2695b2ce\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6bee339d13ee60204dfaf76fc256a4f41052772e0900d23e381a4e00dcde0efc\",\"dweb:/ipfs/QmcVs3A3J6qeTN2bxF9JVV3CEJCu3bd12k5WwvdWJGdory\"]}},\"version\":1}",
@@ -3991,13 +3988,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x415261a0a4Ec58Be291EaE7fe0E9439fd24507Bd",
-      "transactionHash": "0x0f4f7715fcfed9291508ca0c3f845bb8960ef274feccf514ba6f71b45f57768e"
+      "address": "0x3349aa346627D373f40a3887bA7aa562708F11Ec",
+      "transactionHash": "0x170795942ad10f2d254d0de783c2fc859ed6b098a0c09777cc71aaa4f9c2ae9e"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-15T15:41:07.429Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-01-16T13:15:33.199Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
