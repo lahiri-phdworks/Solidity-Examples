@@ -2,7 +2,7 @@
 pragma solidity >=0.4.2 <0.9.0;
 // Not so Smart Contract.
 
-contract Test {
+contract Example3 {
     uint256 counter = 0;
     address public owner;
     uint256 contractBalance = 0;

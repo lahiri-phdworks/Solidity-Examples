@@ -5,6 +5,7 @@ contract Sample {
     uint256 x = 0;
     uint256 z = 9088;
     
+    // Try these first.
     function returnOne() public pure returns (uint256) {
         return 1;
     }
@@ -18,14 +19,17 @@ contract Sample {
         p = 2 * (w + h);
     }
 
+		// Try these first.
     function getBalance() public view returns (uint256 bal) {
         return address(this).balance;
     }
 
+		// Try these first.
     function getBalanceOwn() public view returns (uint256 bal) {
         return msg.sender.balance;
     }
-
+		
+		// Try these first.
     function addNums1(uint256 a, uint256 b)
         public
         pure
