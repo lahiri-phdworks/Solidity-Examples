@@ -1,0 +1,18 @@
+For unchecked send
+
+Add one more variable updated (only one update allowed)
+
+change require to wrong update
+
+and update variable 'updated'
+
+
+
+
+
+For time dependent, trigger bug only at blocks ending in either 2 or 3 with previous ifs
+using block number 
+
+
+For gas exhaustion, find heavy gas consuming operations
+
