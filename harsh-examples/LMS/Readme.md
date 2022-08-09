@@ -1,5 +1,10 @@
-## ContractFuzzer :
+## EchidnaFuzzer:
 
+### Description
+Only verifies properties or assert violations. Come up with a way to depict bug conditions as assert/ property statements
+
+
+## ContractFuzzer :
 
 ### Progress:
 	Found appropriate files and built the docker. Running given examples overnight
