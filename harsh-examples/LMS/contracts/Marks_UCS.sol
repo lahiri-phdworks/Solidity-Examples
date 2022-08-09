@@ -69,7 +69,7 @@ contract Marks_UCS {
             return true;
     }
 
-    function compgrade(uint256 avg) public returns(string memory)
+    function compgrade(uint256 avg) internal returns(string memory)
     {
         if (avg>=90) return 'A';
         if (avg>=80) return 'B';
@@ -146,7 +146,7 @@ contract Marks_UCS {
     }
 
 
-    function checktot(address addr, uint256 req) public returns(bool status ){
+    function checktot(address addr, uint256 req) internal returns(bool status ){
         if (req - totalmarks[addr]>15)
         {
            

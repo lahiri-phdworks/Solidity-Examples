@@ -1,0 +1,4 @@
+cli:
+  argv:
+  - Marks_UCS.sol
+  skip_reverts: true

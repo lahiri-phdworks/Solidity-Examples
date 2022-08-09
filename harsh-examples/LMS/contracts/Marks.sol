@@ -66,7 +66,7 @@ contract Marks {
             return true;
     }
 
-    function compgrade(uint256 avg) internal returns(string memory)
+    function compgrade(uint256 avg) public returns(string memory)
     {
         if (avg>=90) return 'A';
         if (avg>=80) return 'B';
@@ -130,7 +130,7 @@ contract Marks {
     }
 
 
-    function checktot(address addr, uint256 req) internal returns(string memory message ){
+    function checktot(address addr, uint256 req) public returns(string memory message ){
         message = '';
         if (req - totalmarks[addr]>15)
         {

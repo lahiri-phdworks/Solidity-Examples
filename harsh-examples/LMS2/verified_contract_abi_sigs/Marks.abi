@@ -1,0 +1,4 @@
+0x35151bf1: insert(address,uint8[])
+0x095aec60: getIndMark(address,uint8)
+0x313739a3: getGrade(address)
+0x149cff49: graceMarks(address)
