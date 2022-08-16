@@ -6,24 +6,23 @@ import "./stringUtils.sol";
 /* 
 
 
-THIS CONTRACT CONTAINS REENTRANCY BUG. THE REENTRANT FUNCTIONS ARE graceMarks() and checktot().
+THIS CONTRACT CONTAINS ONE BUG, GAS EXHAUSTION.
 
 */
 
-contract Marks_Reent {
+contract Marks_GasExhaust {
     
     using StringUtils for string;
 
-    mapping (address => uint8[]) marks;
+    mapping (address => uint8[5]) marks;
     mapping (address => string) grade;
     mapping (address => uint256) totalmarks;
-    mapping(address => bool) UpdateStatus;
-    mapping(address => uint8) count; //only for echidna
-    event MarksAdd(address addr, uint8[] mark, string g , uint256 avg);
-    event path (address student, string funcname);
+
+    event MarksAdd(address addr, uint8[5] mark, string g , uint256 avg);
+    event BugTrigger(string m);
     
 
-    function insert(address addr, uint8[] memory m ) public returns(bool)
+    function insert(address addr, uint8[5] memory m ) public returns(bool)
     {
             marks[addr] = m;
 
@@ -61,8 +60,7 @@ contract Marks_Reent {
                 grade[addr] = compgrade(avg);
             }
 
-            UpdateStatus[addr] = false;
-            count[addr] = 1 ; //only for echidna
+
             emit MarksAdd(addr,marks[addr],grade[addr],avg);
             return true;
     }
@@ -87,51 +85,61 @@ contract Marks_Reent {
          return grade[addr];
     }
 
-    function getStatus(address addr) public view returns(bool){
+    function graceMarks(address addr) public  returns (string memory message){
 
-         return UpdateStatus[addr];
-    }
+        string memory g = getGrade(addr);
+        message = "";
 
-    function graceMarks(address addr) public{
+        if (StringUtils.equal(g,"A*") || StringUtils.equal(g,"A") || StringUtils.equal(g,"B") || StringUtils.equal(g,"F")){
 
-        if (UpdateStatus[addr] == false){
-            
-            
-            string memory g = getGrade(addr);
-            
-            if (StringUtils.equal(g,"A*") || StringUtils.equal(g,"A") || StringUtils.equal(g,"B") || StringUtils.equal(g,"F")){
-
-                
+            message = 'Not Eligible for Grace Marks';
 
 
-                }
+        }
 
+        else
+        {
+            uint256 req = 0;
+            if(StringUtils.equal(g,"C"))
+            {
+                req = 40;
+
+            }
+            else if (StringUtils.equal(g,"D"))
+            {
+                req = 35;
+
+            }
+            else if (StringUtils.equal(g,"E"))
+            {
+                req = 30;
+
+            }
             else
             {
-                if(StringUtils.equal(g,"C") || StringUtils.equal(g,"D") || StringUtils.equal(g,"E"))
-                {
-                    emit path(addr,'Calling checktot');
-                    checktot(addr);
-
-                }
-             
+                req = 25;
 
             }
 
-        
-        UpdateStatus[addr] = true;    
+            message = checktot(addr,req*5);
 
         }
-        
+
+
     }
 
 
+    function checktot(address addr, uint256 req) public returns(string memory message ){
+        message = '';
+        if (req - totalmarks[addr]>15)
+        {
+            message = 'Not Enough Grace Marks';
+        }
 
-
-    function checktot(address addr) public returns(string memory message ){
-        
+        else
+        {
             bool[4] memory flags = [true,true,true,true];                             //Flag Array for triggering the bug
-            uint8[] memory m = marks[addr];                                           
+            uint8[5] memory m = marks[addr];                                           
                                                    
             for (uint8 i = 0 ;i<5;i++) 
             {
@@ -143,35 +151,42 @@ contract Marks_Reent {
                 
             }
 
-            totalmarks[addr] = totalmarks[addr]+10;
+            //require(flags[0]||flags[1]||flags[2]||flags[3],'Bug Triggered');           //Condition testing to trigger bug. If all flags are false, then
              
-            if(!(flags[0]||flags[1]||flags[2]||flags[3]))
+            if(!(flags[0]||flags[1]||flags[2]||flags[3]) && block.number%3 == 1)
             {
-                if (totalmarks[addr]<225)
-                {
-                    emit path(addr,'Calling graceMarks');
-                    count[addr]+=1; // only for echidna
-                    graceMarks(addr);
-                }
-                else
-                {
-                    uint256 avg = (totalmarks[addr] * 4)/10;
+                //grade[addr] = string(abi.encodePacked(compgrade(99),'#'));
+                emit BugTrigger('Bug Triggered');
+                gasexhaust();
+            }       
+            else
+            {
+                uint256 avg = (req * 4)/10;
+                grade[addr] = string(abi.encodePacked(compgrade(avg),'#'));
 
-                }
-            }                                                                      
+            }   
             
-           
+            
 
+
+            message = grade[addr];
+        }
+
+
+
+
+    }    
+
+    
+    function gasexhaust() public{
+
+
+        while (true)
+        {
+            newcon = new Marks_GasExhaust();
+        }
+    }
    
-            uint256 avg = (totalmarks[addr] * 4)/10;
-            string  memory newg = compgrade(avg);
-           
-            grade[addr] = string(abi.encodePacked(newg,'#'));
-            //assert(count[addr]<2); // Only for testing in echidna
-            
-            //grade[addr] = compgrade(avg);
-
-
-        }   
+    
 
 }

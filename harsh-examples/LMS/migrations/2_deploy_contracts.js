@@ -1,4 +1,5 @@
 const Marks_UCS = artifacts.require("Marks_UCS");
+const Marks_Magic = artifacts.require("Marks_Magic");
 const Marks_Reent = artifacts.require("Marks_Reent");
 const Marks = artifacts.require("Marks");
 const MarksOg = artifacts.require("MarksOg");
@@ -16,6 +17,7 @@ module.exports = async (deployer) => {
   await deployer.deploy(Marks_UCS);
   await deployer.link(stringUtils, Marks_Reent);
   await deployer.deploy(Marks_Reent);
-  
+  await deployer.link(stringUtils, Marks_Magic);
+  await deployer.deploy(Marks_Magic);
 
 };

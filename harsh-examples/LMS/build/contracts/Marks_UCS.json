@@ -26294,12 +26294,12 @@
       "links": {
         "StringUtils": "0xA82D194e737245858868E0e363A591EF6Cc26D8F"
       },
-      "address": "0x98c2F0C8171D712118362b210755AA20772bfC16",
-      "transactionHash": "0x158695c8664beaf02ba0f24c8c89d8ca631686ad59d7ed58c5a04bb75b343109"
+      "address": "0x4fbd483A55777aB0a21EC14FE411C01Fb9035094",
+      "transactionHash": "0x82a70e2091b275ea87282df2e2aa8e574a60dfbff0d5a740e1ecf270ab73acb6"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-08-10T07:46:06.039Z",
+  "updatedAt": "2022-08-16T13:05:44.461Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

@@ -3049,12 +3049,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x73d65Fd67Da5ff05EE468e285431474dbd265cb4",
-      "transactionHash": "0x38253e3b80568210b8e22c03a7589e5a50d19ed92925706057b88d7b2229beda"
+      "address": "0xB825A5d35B6bd56756b9c1f15bec81af9140D45d",
+      "transactionHash": "0xaafff46ac1e66d5a9bc755dee1bed22f55f4add533151aa08c0cbf45e0020701"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-08-10T07:46:06.257Z",
+  "updatedAt": "2022-08-16T13:05:44.629Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

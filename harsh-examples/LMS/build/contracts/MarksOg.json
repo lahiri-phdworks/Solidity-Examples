@@ -24256,12 +24256,12 @@
       "links": {
         "StringUtils": "0xA82D194e737245858868E0e363A591EF6Cc26D8F"
       },
-      "address": "0x777A771bF080eaEE2FCB402508dEcCdb4744b192",
-      "transactionHash": "0x0abdc6f9b4fe3c94655e6168766223aaf9b9de892f506faff96eea01ee250e2a"
+      "address": "0x9d366d97cD41D141e87eaa6fD0a8A98e983d699e",
+      "transactionHash": "0x5115c01d94d549abd476d6c82fd30c701375667b61e054296133bb24ef319900"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-08-10T07:46:06.219Z",
+  "updatedAt": "2022-08-16T13:05:44.618Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
