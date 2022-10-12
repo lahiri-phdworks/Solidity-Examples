@@ -1,1 +1,21 @@
+## Google Docs
+- [Bug Templates](https://docs.google.com/document/d/18HHh9Sgm0eONhNJXNJs_h_Sh2y4LHf1l7inJop2Otw0/edit?usp=sharing)
+- [BUGS VS TOOLS](https://docs.google.com/document/d/1yzOj_VUtiZfFWyGNELRyCo7EQRQUnYw4gCmSbP0-L8A/edit?usp=sharing)
 
+## TOOLS
+- [EchidnaFuzzer](https://github.com/crytic/echidna)
+- [Mythril](https://github.com/ConsenSys/mythril)
+- [ContractFuzzer](https://github.com/gongbell/ContractFuzzer)
+- [Slither](https://github.com/crytic/slither)
+- [MantiCore](https://github.com/trailofbits/manticore)
+
+## Framework
+- [Apocalypse](https://github.com/subhajitroy/smartsynth)
+
+## Paper
+- [Apocalypse](https://dl.acm.org/doi/10.1145/3236024.3236084)
+
+## Repositories
+- [SmartBugs](https://github.com/smartbugs/smartbugs)
+- [SolidiFI](https://github.com/DependableSystemsLab/SolidiFI)
+- [Not So Smart Contracts](https://github.com/crytic/not-so-smart-contracts)
