@@ -16,6 +16,7 @@
 - [Apocalypse](https://dl.acm.org/doi/10.1145/3236024.3236084)
 
 ## Repositories
+- [Smart Contracts SWC Registry](https"//swcregistry.io)
 - [SmartBugs](https://github.com/smartbugs/smartbugs)
 - [SolidiFI](https://github.com/DependableSystemsLab/SolidiFI)
 - [Not So Smart Contracts](https://github.com/crytic/not-so-smart-contracts)
