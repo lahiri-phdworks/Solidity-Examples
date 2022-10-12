@@ -17,6 +17,7 @@
 
 ## Repositories
 - [Smart Contracts SWC Registry](https"//swcregistry.io)
+- [trailofbits/not-going-anywhere](https://github.com/trailofbits/not-going-anywhere)
 - [SmartBugs](https://github.com/smartbugs/smartbugs)
 - [SolidiFI](https://github.com/DependableSystemsLab/SolidiFI)
 - [Not So Smart Contracts](https://github.com/crytic/not-so-smart-contracts)
