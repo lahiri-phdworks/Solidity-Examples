@@ -19,7 +19,6 @@ Github Isssue link : https://github.com/trailofbits/manticore/issues/2492
 ### Possible Solution : contact the developer. He/She has not responded above issue in last 8 months
 
 
-## Useful Links
+## [Relevant Links](Links.md)
 
-- [Bug Templates](https://docs.google.com/document/d/18HHh9Sgm0eONhNJXNJs_h_Sh2y4LHf1l7inJop2Otw0/edit?usp=sharing)
-- [BUGS VS TOOLS](https://docs.google.com/document/d/1yzOj_VUtiZfFWyGNELRyCo7EQRQUnYw4gCmSbP0-L8A/edit?usp=sharing)
+
