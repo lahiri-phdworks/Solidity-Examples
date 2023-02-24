@@ -1,6 +1,7 @@
 ## Google Docs
 - [Bug Templates](https://docs.google.com/document/d/18HHh9Sgm0eONhNJXNJs_h_Sh2y4LHf1l7inJop2Otw0/edit?usp=sharing)
 - [BUGS VS TOOLS](https://docs.google.com/document/d/1yzOj_VUtiZfFWyGNELRyCo7EQRQUnYw4gCmSbP0-L8A/edit?usp=sharing)
+- [ETS BUGS VS TOOLS](https://docs.google.com/document/d/17buT-3asaj0BxZqBcv-FZ9L-0yjoCPVi4kR8Z52ZLE4/edit?usp=sharing)
 
 ## TOOLS
 - [EchidnaFuzzer](https://github.com/crytic/echidna)
